@@ -27,19 +27,23 @@ body {
 .sidebar {
 	position: fixed;
 	top: 0;
-	left: 0;
+	left: -300px;
 	width: 300px;
 	height: 100vh;
 	background: #1c1515;
-	transition: .5s;
+	transition: .7s;
 	padding: 20px;
 	text-align: center;
 	box-sizing: border-box;
 }
 
+.sidebar.active {
+	left: 0;
+}
+
 .sidebar img {
-	width: 150px;
-	height: 150px;
+	width: 130px;
+	height: 130px;
 }
 
 .sidebar .menu {
@@ -62,5 +66,57 @@ body {
 }
 
 .sidebar .menu li a:hover {
+	background: #c30d23;
+}
+
+.menu-icon.active span {
+	position: absolute;
+	width: calc(100% - 16px);
+	top: calc(50% - 8px);
+}
+
+.menu-icon.active span:nth-child(1) {
+	transform: rotate(45deg);
+}
+
+.menu-icon.active span:nth-child(2) {
+	display: none;
+}
+
+.menu-icon.active span:nth-child(3) {
+	transform: rotate(-45deg);
+}
+
+.social-icon {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	display: flex;
+	width: 100%;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.social-icon li {
+	width: 20%;
+	text-align: center;
+	list-style: none;
+}
+
+.social-icon li a {
+	display: block;
+	font-size: 18px;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	transition: .5s;
+}
+
+.social-icon li a:hover {
 	background: #c30d23;
 }
