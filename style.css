@@ -13,6 +13,7 @@ body {
 	background: #1c1515;
 	box-sizing: border-box;
 	cursor: pointer;
+	z-index: 2;
 }
 
 .menu-icon span {
@@ -27,18 +28,19 @@ body {
 .sidebar {
 	position: fixed;
 	top: 0;
-	left: -300px;
-	width: 300px;
+	right: -350px;
+	width: 350px;
 	height: 100vh;
 	background: #1c1515;
 	transition: .7s;
 	padding: 20px;
 	text-align: center;
 	box-sizing: border-box;
+	z-index: 1;
 }
 
 .sidebar.active {
-	left: 0;
+	right: 0;
 }
 
 .sidebar img {
@@ -120,3 +122,14 @@ body {
 .social-icon li a:hover {
 	background: #c30d23;
 }
+
+
+
+
+
+
+
+
+
+
+/* responsive */
