@@ -31,7 +31,7 @@ body {
 	right: -350px;
 	width: 350px;
 	height: 100vh;
-	background: #1c1515;
+	background: rgba(0, 0, 0, 0.9);
 	transition: .7s;
 	padding: 20px;
 	text-align: center;
