@@ -69,6 +69,7 @@ body {
 
 .sidebar .menu li a:hover {
 	background: #c30d23;
+	transition: all ease-in-out 600ms;
 }
 
 .menu-icon.active span {
@@ -116,7 +117,7 @@ body {
 	text-align: center;
 	line-height: 40px;
 	border-radius: 50%;
-	transition: .5s;
+	transition: all ease-in-out 600ms;
 }
 
 .social-icon li a:hover {
